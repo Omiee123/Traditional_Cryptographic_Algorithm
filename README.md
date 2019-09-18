@@ -7,5 +7,6 @@ The Different Cryptographic Algorithm like
 3. Vignere Cipher
 4. Hill Cipher
 5. One Time Pad
+6. GCD using Extended Euclidean Algorithm
 
 are implemented in python language
