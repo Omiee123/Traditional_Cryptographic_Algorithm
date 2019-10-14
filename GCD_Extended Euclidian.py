@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[6]:
-
-
 def gcdExtended(x, y):
     #variable Intialisation
     a1,b1 = 1,0
@@ -32,24 +29,7 @@ def gcdExtended(x, y):
         
     return gcd
 
-
-# In[7]:
-
-
 a = int(input("Enter First number :"))
 b = int(input("Enter Second number :"))
 g = gcdExtended(a, b)
 print("GCD of Two number using Extednded Euclidean is : {}".format(g))
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
