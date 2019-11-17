@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[16]:
-
-
 def encrypt_decrypt(text,key,input_var):
     result=""
     
@@ -21,10 +18,6 @@ def encrypt_decrypt(text,key,input_var):
                 result += chr((ord(char) + s -97) % 26 + 97)
     
     return result
-
-
-# In[17]:
-
 
 print("Press the suitable number")
 print("1. Encrypt Plain Text")
@@ -46,4 +39,3 @@ if input_var == 2:
     s = input()
     result = encrypt_decrypt(text,s,input_var)
     print(result)
-
