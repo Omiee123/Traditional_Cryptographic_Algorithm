@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
-
-
 def encrypt(text,s):
     result = ""
     
@@ -18,10 +15,6 @@ def encrypt(text,s):
             
     return result
 
-
-# In[ ]:
-
-
 def decrypt(text,s):
     result = ""
     
@@ -35,10 +28,6 @@ def decrypt(text,s):
             result += chr((ord(char) + (26-s) - 97) % 26 + 97)
             
     return result
-
-
-# In[2]:
-
 
 def encrypt_decrypt(text,s,input_var):
     result = ""
@@ -55,10 +44,6 @@ def encrypt_decrypt(text,s,input_var):
             
     return result
 
-
-# In[5]:
-
-
 print("Press the suitable number")
 print("1. Encrypt Plain Text")
 print("2. Decrypt Encrypted Text")
@@ -70,6 +55,7 @@ if input_var == 1:
     print("Enter key")
     s = int(input())
     result = encrypt_decrypt(text,s,input_var)
+    #result = encrypt(text,s)
     print(result)
     
 if input_var == 2:
@@ -78,11 +64,5 @@ if input_var == 2:
     print("Enter key")
     s = int(input())
     result = encrypt_decrypt(text,s,input_var)
+    #decrypt(text,s)
     print(result)
-
-
-# In[ ]:
-
-
-
-
