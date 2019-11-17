@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[13]:
-
-
 def process(text):
     
     #Removing Spaces between words
@@ -19,10 +16,6 @@ def process(text):
     print()
     
     return text
-
-
-# In[14]:
-
 
 def encrypt_decrypt(string,key):
     
@@ -46,36 +39,17 @@ def encrypt_decrypt(string,key):
             
     return result
 
-
-# In[15]:
-
-
 def read_text():
     print("Enter the plain text")
     text = input()
     return text
-
-
-# In[16]:
-
 
 def read_key():
     print("Enter the key Message")
     key = input()
     return key
 
-
-# In[18]:
-
-
 string = read_text()
 key=read_key()
 result = encrypt_decrypt(string,key)
 print(result)
-
-
-# In[ ]:
-
-
-
-
