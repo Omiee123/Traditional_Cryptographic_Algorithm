@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 def matrix_multi(mat1,mat2,row1,column1,column2):
     temp = [[0]*column2 for i in range(row1)]
     
@@ -14,12 +11,7 @@ def matrix_multi(mat1,mat2,row1,column1,column2):
 
     return temp
 
-
-# In[2]:
-
-
-def readmatrix():
-    
+def readmatrix():    
     print("Enter the length of row and column")
     row = int(input())
     array = [ [0]*row for i in range(row) ]
@@ -28,10 +20,6 @@ def readmatrix():
         array[i] = [ int(i) for i in input().split() ]
         
     return array
-
-
-# In[3]:
-
 
 def process(text):
     
@@ -48,10 +36,6 @@ def process(text):
     print()
     
     return text
-
-
-# In[4]:
-
 
 def encrypt(key_matrix,text):
     
@@ -83,10 +67,6 @@ def encrypt(key_matrix,text):
         
     return answer 
 
-
-# In[5]:
-
-
 print("Press the suitable number")
 print("1. Encrypt Plain Text")
 print("2. Decrypt Encrypted Text")
@@ -107,11 +87,3 @@ if input_var == 1:
     print()    
     
     print("Cipher Text is : {}".format(encrypt(key_matrix,text_final)))
-    
-
-
-# In[ ]:
-
-
-
-
