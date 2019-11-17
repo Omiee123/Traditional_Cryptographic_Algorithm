@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 def Unique_key(plain_text, key):
     
     Unique_key = ""
@@ -20,10 +17,6 @@ def Unique_key(plain_text, key):
             Unique_key += key[i]
 
     return Unique_key
-
-
-# In[2]:
-
 
 def key_encrypt(text,s):
     #variable Exchange
@@ -69,20 +62,12 @@ def key_encrypt(text,s):
         
     return Key_Matrix
 
-
-# In[3]:
-
-
 def find_char(Matrix,letter):
     
     for i in range(5):
         for j in range(5):
             if Matrix[i][j] == letter:
                 return i,j
-
-
-# In[11]:
-
 
 def encrypt(text,s):
     
@@ -139,10 +124,6 @@ def encrypt(text,s):
         
     return answer
 
-
-# In[12]:
-
-
 def dec_encrypt(text,s):
     
     #Finding Key_Matrix
@@ -175,10 +156,6 @@ def dec_encrypt(text,s):
         answer = answer + char_1 + char_2
         
     return answer
-
-
-# In[14]:
-
 
 print("Press the suitable number")
 print("1. Encrypt Plain Text")
@@ -218,6 +195,3 @@ if input_var == 2:
 
     result = dec_encrypt(cipher_text,dec_s)
     print("Encrypted Text : {}".format(result))
-
-
-# 
