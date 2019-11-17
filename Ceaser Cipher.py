@@ -9,7 +9,6 @@ def encrypt(text,s):
         
         if (char.isupper()):
             result += chr((ord(char) + s-65) % 26 + 65)
-            
         else:
             result += chr((ord(char) + s-97) % 26 + 97)
             
@@ -23,7 +22,6 @@ def decrypt(text,s):
         
         if (char.isupper()):
             result += chr((ord(char) + (26-s) - 65) % 26 + 65)
-            
         else:
             result += chr((ord(char) + (26-s) - 97) % 26 + 97)
             
@@ -38,7 +36,6 @@ def encrypt_decrypt(text,s,input_var):
         
         if (char.isupper()):
             result += chr((ord(char) + s-65) % 26 + 65)
-            
         else:
             result += chr((ord(char) + s-97) % 26 + 97)
             
